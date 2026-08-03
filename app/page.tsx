@@ -1,43 +1,22 @@
-export default function Page() {
+import Link from "next/link";
+
+export default function HomePage() {
   return (
-    <main style={{
-      minHeight: "100vh",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      padding: "2rem",
-      background: "#f8fafc",
-      color: "#111827",
-    }}>
-      <div style={{
-        maxWidth: 640,
-        width: "100%",
-        textAlign: "center",
-        padding: "2rem",
-        borderRadius: 20,
-        background: "#ffffff",
-        boxShadow: "0 24px 80px rgba(15, 23, 42, 0.12)",
-      }}>
-        <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
-          লগইন পেজে সরাসরি রিডাইরেক্ট হচ্ছে...
-        </h1>
-        <p style={{ marginBottom: "1.5rem", color: "#4b5563" }}>
-          আপনি যদি এখানে আছেন, তাহলে অনুগ্রহ করে নীচের বাটনে ক্লিক করে লগইন পেজ দেখুন।
+    <div className="hero-section">
+      <div className="hero-content">
+        <h1 className="hero-title">🚀 আপনার অনলাইন আয়ের স্মার্ট প্ল্যাটফর্ম</h1>
+        <p className="hero-desc">
+          গেম খেলুন, টাস্ক সম্পন্ন করুন, AI সহায়তা নিন এবং আয় করুন। সবকিছু এক জায়গায়!
         </p>
-        <a
-          href="/login"
-          style={{
-            display: "inline-block",
-            padding: "0.95rem 1.5rem",
-            borderRadius: 12,
-            background: "#2563eb",
-            color: "white",
-            fontWeight: 600,
-            textDecoration: "none",
-          }}>
-          লগইন পেজ খুলুন
-        </a>
+        <div className="hero-buttons">
+          <Link href="/login" className="button button-primary btn-large">
+            শুরু করুন (লগইন)
+          </Link>
+          <Link href="/games" className="button button-secondary btn-large">
+            গেম সেন্টার দেখুন
+          </Link>
+        </div>
       </div>
-    </main>
+    </div>
   );
 }

@@ -1,0 +1,272 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f8fafc;
+    color: #111827;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+}
+
+.shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.brand {
+    font-weight: 800;
+    font-size: 1.05rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.container {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.footer {
+    border-top: 1px solid #e2e8f0;
+    background: #ffffff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 24px;
+}
+
+.muted {
+    color: #64748b;
+}
+
+.small {
+    font-size: 0.95rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    font-size: 1.35rem;
+}
+
+.social-links a {
+    color: #64748b;
+    transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #2563eb;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 80px 24px;
+}
+
+.hero-content {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 4vw, 3.6rem);
+    margin-bottom: 1rem;
+    line-height: 1.05;
+}
+
+.hero-desc {
+    color: #475569;
+    font-size: 1.1rem;
+    max-width: 640px;
+    margin: 0 auto 2rem;
+    line-height: 1.75;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    padding: 15px 26px;
+    font-weight: 700;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.button-secondary {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.btn-large {
+    font-size: 1rem;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 24px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 36px 30px;
+    border-radius: 28px;
+    box-shadow: 0 30px 80px rgba(15, 23, 42, 0.12);
+    text-align: center;
+}
+
+.login-card h1 {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 2rem;
+}
+
+.login-card .muted {
+    margin-bottom: 24px;
+}
+
+.social-buttons {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.social-buttons button {
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-google {
+    background: #db4437;
+    color: white;
+}
+
+.btn-telegram {
+    background: #0088cc;
+    color: white;
+}
+
+.btn-github {
+    background: #111827;
+    color: white;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    color: #94a3b8;
+    margin: 24px 0;
+    font-size: 0.95rem;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e2e8f0;
+}
+
+.divider::before {
+    margin-right: 12px;
+}
+
+.divider::after {
+    margin-left: 12px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid #d1d5db;
+    outline: none;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.mt {
+    margin-top: 18px;
+}
+
+.link {
+    color: #2563eb;
+    font-weight: 700;
+}
