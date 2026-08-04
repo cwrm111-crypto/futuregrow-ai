@@ -24,6 +24,7 @@ export default function RootLayout({
               <Link href="/">হোম</Link>
               <Link href="/games">গেম সেন্টার</Link>
               <Link href="/tasks">টাস্ক</Link>
+              <Link href="/dashboard">ড্যাশবোর্ড</Link>
             </nav>
           </header>
 

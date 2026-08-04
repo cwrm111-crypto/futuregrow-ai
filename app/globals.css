@@ -270,3 +270,64 @@ button {
     color: #2563eb;
     font-weight: 700;
 }
+
+.auth-error {
+    color: #dc2626;
+    margin-bottom: 12px;
+}
+
+.auth-info {
+    color: #059669;
+    margin-bottom: 12px;
+}
+
+.dashboard {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.dashboard-title {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.logout-btn {
+    width: auto;
+    padding: 10px 20px;
+    background: #ef4444;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.stat-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stat-label {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
